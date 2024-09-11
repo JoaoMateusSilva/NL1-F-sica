@@ -4,31 +4,47 @@ c = 3e8
 u0 = 4 * np.pi * 1e-7
 
 def descricao():
+    
     print("Autores:")
-    print("Heron de Souza, João Mateus E. B. da Silva, Sergio , Vinicius")
+    print("Heron de Souza, João Mateus E. B. da Silva, Sergio de Siqueira Santos, Vinicius Trivellato Pereira")
+    
     print()
+    
+    print("Sobre o programa:")
     print("Este programa realiza cálculos envolvendo ondas eletromagnéticas.")
     print("Ele permite calcular parâmetros como o campo elétrico (Em), campo magnético (Bm),")
     print("intensidade da onda (I), além de parâmetros como a frequência (f),")
     print("comprimento de onda (λ), número de onda (k), e frequência angular (ω).")
+    
     print()
+    
     print("Conceitos físicos envolvidos:")
-    print("Ondas eletromagnéticas são caracterizadas pela propagação de campos elétricos e magnéticos")
-    print("perpendiculares entre si e à direção de propagação da onda.")
+    print("Ondas eletromagnéticas são perturbações que se propagam no espaço transportando energia.")
+    print("Elas consistem em campos elétricos (Em) e magnéticos (Bm) oscilantes,")
+    print("que são perpendiculares entre si e à direção de propagação da onda.")
+    print("Essas ondas podem se propagar no vácuo, com a velocidade da luz (c ≈ 3.0 x 10^8 m/s),")
+    print("e são descritas por grandezas como frequência (f), comprimento de onda (λ),")
+    print("número de onda (k), e intensidade (I).")
+    
     print()
+    
     print("Equações utilizadas:")
     print("- Bm = Em / c")
     print("- I = Em² / (2 * u0 * c)")
     print("- f = c / λ")
     print("- k = 2π / λ")
     print("- ω = 2πf")
+    
     print()
+    
     print("Limitações:")
     print("- As equações assumem que a onda eletromagnética se propaga no vácuo.")
     print("- Não considera atenuações, reflexões ou interferências de materiais.")
+    
     print()
+    
     print("Observações:")
-    print("As entradas do programa devem ser: 6.58e-3 ou 8.27e6, caso os números estejam em notação científica.")
+    print("As entradas do programa devem ser: 6.58e-3 ou 8.27e6, caso os números sejam em notações científicas.")
 
 def calc_campos_eletromagneticos():
     print("Escolha a entrada:")

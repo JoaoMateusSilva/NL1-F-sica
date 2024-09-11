@@ -30,7 +30,7 @@ def descricao():
     print("Observações:")
     print("As entradas do programa devem ser: 6.58e-3 ou 8.27e6, caso os números estejam em notação científica.")
 
-def calcular_em_bm_i():
+def calc_campos_eletromagneticos():
     print("Escolha a entrada:")
     print("1 - Em (Campo Elétrico)")
     print("2 - Bm (Campo Magnético)")
@@ -47,12 +47,13 @@ def calcular_em_bm_i():
         print(f"Intensidade da Onda (I): {I:.5e} W/m²")
 
     elif tipo_entrada == "2":
-        Bm = float(input("Digite o valor de Bm (Campo Magnético) em T: "))
-        Em = Bm * c
-        I = Em**2 / (2 * u0 * c)
+        Bm = float(input("Digite o valor de Bm (Campo Magnético) em µT: ")) * 1e-6  
+        Em = Bm * c  
+        I = (Bm**2 * c) / (2 * u0)  
 
         print(f"Campo Elétrico (Em): {Em:.5e} V/m")
         print(f"Intensidade da Onda (I): {I:.5e} W/m²")
+
 
     elif tipo_entrada == "3":
         I = float(input("Digite o valor de I (Intensidade da Onda) em W/m²: "))
@@ -119,6 +120,7 @@ def calcular_parametros_onda():
 
 def menu():
     descricao() 
+    
     while True:
         print("\nSelecione uma das opções abaixo:")
         print("1 - Calcular campos eletromagnéticos (Em, Bm, I)")
@@ -128,7 +130,7 @@ def menu():
         opcao = input("Digite o número da opção: ")
 
         if opcao == "1":
-            calcular_em_bm_i() 
+            calc_campos_eletromagneticos() 
         elif opcao == "2":
             calcular_parametros_onda()  
         elif opcao == "3":

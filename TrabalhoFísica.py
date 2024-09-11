@@ -85,7 +85,7 @@ def calcular_parametros_onda():
         print(f"Número de onda (k): {k:.5e} rad/m")
         print(f"Frequência angular (ω): {ω:.5e} rad/s")
 
-    elif tipo_entrada == "2": 
+    elif tipo_entrada == "2":
         λ = float(input("Digite o valor do comprimento de onda (λ) em metros: "))
         f = c / λ
         k = 2 * np.pi / λ
@@ -94,7 +94,7 @@ def calcular_parametros_onda():
         print(f"Frequência (f): {f:.5e} Hz")
         print(f"Número de onda (k): {k:.5e} rad/m")
         print(f"Frequência angular (ω): {ω:.5e} rad/s")
-
+        
     elif tipo_entrada == "3":  
         k = float(input("Digite o valor do número de onda (k) em rad/m: "))
         λ = 2 * np.pi / k
